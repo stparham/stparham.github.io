@@ -1,1 +1,0 @@
-# stparham.github.io
