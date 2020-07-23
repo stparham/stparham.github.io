@@ -1,0 +1,35 @@
+/* Colors */
+@value darkGray: #343233;
+@value darkGray2: #807a7d;
+@value lightGray: #efeae1;
+@value yellowWhite: #efdab9;
+@value aquaBlue: #78b0a0;
+@value brownBeige: #584b4f;
+
+/*Atom website spinny ring colors*/
+@value red: #C14021;
+@value orange: #D36E2D;
+@value fadedOrange: #7C4F36;
+@value yellow: #DDA032;
+@value fadedYellow: #A87E35;
+@value green: #78AF9F;
+@value fadedGreen: #4A5B5A;
+@value blue: #659CC8;
+@value fadedBlue: #414F5C;
+
+/* Atom website button colors */
+@value yellow2: #ffd152;
+@value darkerYellow2: #ffc31f;
+
+/*Atom website link colors*/
+@value darkYellow: #ebac00;
+@value darkOrange: #D36E2D;
+@value darkGreen: #3b9b6d;
+
+/* Properties */
+@value backgroundColor: darkGray;
+@value sectionColor: brownBeige;
+@value textMainColor: yellowWhite;
+@value textEmphasisColor: aquaBlue;
+@value linkColor: yellow2;
+@value navActiveColor: darkYellow;
