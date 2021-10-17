@@ -1,34 +1,9 @@
-{# ---
-homeLink:
-  text: Stanton
-  url: /
-navLinks:
-  - text: About
-    url: /about
-  - text: Contact
-    url: /contact
---- #}
-
-{# {% set homeLink = {
-  "text": "Stanton",
-  "url": "/"
-} %}
-
-{% set navLinks = [
-  {
-    "text": "About",
-    "url": "/about"
-  },
-  {
-    "text": "Contact",
-    "url": "/contact"
-  }
-] %} #}
+{# Navigation links are created based on the contents of src/_data/navbar.json #}
 
 <nav class="navbar">
-  <a href="{{ homeLink.url | url }}" {% if page.url == homeLink.url %} aria-current="page" {% endif %} class="brand">{{ homeLink.text }}</a>
+  <a href="{{ navbar.homeLink.url | url }}" {% if page.url == navbar.homeLink.url %} aria-current="page" {% endif %} class="brand">{{ navbar.homeLink.text }}</a>
 
-  {%- for link in navLinks -%}
+  {%- for link in navbar.navLinks -%}
     <a href="{{ link.url | url }}" {% if page.url == link.url %} aria-current="page" class="activeLink" {% endif %}>{{ link.text }}</a>
   {%- endfor -%}
 </nav>
