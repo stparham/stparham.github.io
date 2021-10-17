@@ -1,21 +1,24 @@
-import React from 'react';
+---
+title: Stanton Parham
+---
 
-import Navbar from '../components/Navbar.js';
-
-import '../common.module.css';
-import styles from './index.module.css';
-
-import me from '../img/stanton_parham_headshot.jpg';
-
-export default function Home() {
-  return (
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="common.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
     <div>
-      <Navbar />
-      <div className={styles.content}>
+      {% include "navbar.njk" %}
+      <div class="content">
         <div>
-          <h1>Hello</h1>
+          <h1>Greetings</h1>
           <p>My name is Stanton Parham.</p>
-          <img src={me} alt='Stanton Parham' className={styles.mePic} loading='lazy' height='300' width='300' />
+          <img src="img/stanton_parham_headshot.jpg" alt="Stanton Parham" class="me-pic" loading="lazy" height="300" width="300" />
           <p>
             For the most part, I'm a software developer.  It's what I love to do, and I also
             consider myself to be quite good at it.  Honestly, I just enjoy engineering, building things, and
@@ -42,5 +45,5 @@ export default function Home() {
         <p><em>Please bear with me as this site is still in its infancy.</em></p>
       </footer>
     </div>
-  );
-};
+  </body>
+</html>

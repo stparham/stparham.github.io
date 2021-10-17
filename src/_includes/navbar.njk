@@ -1,0 +1,9 @@
+{# Navigation links are created based on the contents of src/_data/navbar.json #}
+
+<nav class="navbar">
+  <a href="{{ navbar.homeLink.url | url }}" {% if page.url == navbar.homeLink.url %} aria-current="page" {% endif %} class="brand">{{ navbar.homeLink.text }}</a>
+
+  {%- for link in navbar.navLinks -%}
+    <a href="{{ link.url | url }}" {% if page.url == link.url %} aria-current="page" class="activeLink" {% endif %}>{{ link.text }}</a>
+  {%- endfor -%}
+</nav>
