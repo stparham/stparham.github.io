@@ -1,0 +1,83 @@
+/* Custom properties */
+:root {
+  /* Colors */
+  --darkGray: #343233;
+  --darkGray2: #807a7d;
+  --lightGray: #efeae1;
+  --yellowWhite: #efdab9;
+  --aquaBlue: #78b0a0;
+  --brownBeige: #584b4f;
+
+  /*Atom website spinny ring colors*/
+  --red: #C14021;
+  --orange: #D36E2D;
+  --fadedOrange: #7C4F36;
+  --yellow: #DDA032;
+  --fadedYellow: #A87E35;
+  --green: #78AF9F;
+  --fadedGreen: #4A5B5A;
+  --blue: #659CC8;
+  --fadedBlue: #414F5C;
+
+  /* Atom website button colors */
+  --yellow2: #ffd152;
+  --darkerYellow2: #ffc31f;
+
+  /*Atom website link colors*/
+  --darkYellow: #ebac00;
+  --darkOrange: #D36E2D;
+  --darkGreen: #3b9b6d;
+
+  /* Properties */
+  --backgroundColor: var(--darkGray);
+  --sectionColor: var(--brownBeige);
+  --textMainColor: var(--yellowWhite);
+  --textEmphasisColor: var(--aquaBlue);
+  --linkColor: var(--yellow2);
+  --navActiveColor: var(--darkYellow);
+}
+
+/* General styling */
+body {
+  background-color: var(--backgroundColor);
+  color: var(--textMainColor);
+  font-family: Univers,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Nav bar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--sectionColor);
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar > a {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.navbar .brand {
+  font-size: 1.5rem;
+}
+
+.active-link {
+  color: var(--navActiveColor);
+  font-size: 25rem;
+}
