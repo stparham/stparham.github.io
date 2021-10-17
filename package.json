@@ -20,7 +20,7 @@
     "build": "npm run clean && npx @11ty/eleventy",
     "clean": "rm -r ./_site || true",
     "serve": "npx @11ty/eleventy --serve",
-    "deploy": "npm run build && gh-pages -d site -b master"
+    "deploy": "npm run build && gh-pages -d _site"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
