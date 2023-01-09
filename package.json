@@ -23,7 +23,7 @@
     "deploy": "npm run build && gh-pages -d _site"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "gh-pages": "^3.2.3"
   }
 }
